@@ -7,8 +7,8 @@ const cx = classNames.bind(styles);
 function HeaderIcon() {
   return (
     <div className={cx("icon")}>
-      {HEADER_ICON.map(({ name, src, alt }) => (
-        <img src={src} alt={alt} />
+      {HEADER_ICON.map(({id, src, alt }) => (
+        <img key={id} src={src} alt={alt} />
       ))}
     </div>
   );

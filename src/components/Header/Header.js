@@ -1,8 +1,7 @@
 import HeaderNavbar from "./HeaderNavbar";
-import classNames from "classnames/bind";
-
-import styles from "./Header.module.scss";
 import HeaderIcon from "./HeaderIcon";
+import classNames from "classnames/bind";
+import styles from "./Header.module.scss";
 const cx = classNames.bind(styles);
 
 function Header() {
@@ -13,7 +12,7 @@ function Header() {
       <HeaderNavbar />
 
       <div className={cx("text-line")}>
-        <p className="heading-text">THUANTHANHTECH</p>
+        <p className="heading-text" style={{color:"white"}}>THUANTHANHTECH</p>
         <p className="sub-text">
           Cung cấp những giải pháp hàng đầu, dịch vụ tối ưu nhất trong giáo dục
         </p>

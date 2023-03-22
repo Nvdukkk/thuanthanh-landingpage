@@ -7,8 +7,8 @@ const cx = classNames.bind(styles);
 function HeaderNavbar() {
   return (
     <div className={cx("navbar")}>
-      {HEADER_NAV.map(({ name, url }) => (
-        <a href={url} className={cx("navbar-item")}>
+      {HEADER_NAV.map(({id, name, url }) => (
+        <a key={id} href={url} className={cx("navbar-item")}>
           {name}
         </a>
       ))}
