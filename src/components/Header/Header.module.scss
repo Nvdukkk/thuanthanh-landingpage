@@ -1,0 +1,57 @@
+.header {
+  background-image: url("../../../public/image/header_background.png");
+  font-weight: 800;
+  height: 579px;
+  color: white;
+  position: relative;
+}
+.navbar {
+  float: right;
+  padding: 20px 20vw 0 0;
+}
+.navbar-item {
+  padding-left: 30px;
+  font-style: 18px;
+}
+.text-line {
+  width: 526px;
+  padding-top: 170px;
+  margin-left: 24vw;
+}
+
+.btn-line {
+  margin-left: 27.8vw;
+  margin-top: 26px;
+
+  button {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    width: 139px;
+    height: 54px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  :first-child {
+    background-color: var(--primary-color);
+    margin-right: 2.3vw;
+    color: white;
+  }
+  :last-child {
+    background-color: white;
+    color: var(--primary-color);
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 30px;
+  margin-right: 32px;
+
+  * {
+    margin: 10px 0;
+  }
+}
