@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    margin: 42px 16.1vw;
+    justify-content: space-between;
+
+    h3{
+        text-align: right;
+        margin-top: 10px;
+    }
+    p{
+        text-align: justify;
+        color:var(--text-color);
+        font-size: 18px;
+    }
+}

@@ -12,7 +12,7 @@ function Header() {
       <HeaderNavbar />
 
       <div className={cx("text-line")}>
-        <p className="heading-text" style={{color:"white"}}>THUANTHANHTECH</p>
+        <h3 style={{color:"white"}}>THUANTHANHTECH</h3>
         <p className="sub-text">
           Cung cấp những giải pháp hàng đầu, dịch vụ tối ưu nhất trong giáo dục
         </p>

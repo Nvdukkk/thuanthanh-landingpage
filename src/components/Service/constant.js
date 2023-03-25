@@ -1,4 +1,4 @@
-export const BOX = [
+export const SERVICE_BOX = [
   {
     id: 1,
     src: "/icon/programming.svg",

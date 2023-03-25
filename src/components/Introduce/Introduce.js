@@ -7,7 +7,7 @@ function Introduce() {
     <div className={cx("container")}>
       <img src="/image/poster.png" alt="poster" className={cx("img")} />
       <div className={cx("box")}>
-        <p className="heading-text">VỀ CHÚNG TÔI</p>
+        <h3>VỀ CHÚNG TÔI</h3>
         <p>__________</p>
         <p>
           Đến với Thuận Thành Tech bạn luôn có được sự phục vụ tốt nhất của

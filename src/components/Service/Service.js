@@ -1,15 +1,16 @@
 import classNames from "classnames/bind";
-import { BACKGROUND_ITEM } from "./constant";
 import styles from "./Service.module.scss";
 import ServiceBox from "./ServiceBox";
+import { BACKGROUND_ITEM } from "./constant";
+
 const cx = classNames.bind(styles);
 
 function Service() {
   return (
     <div className={cx("container")}>
-      <p className="heading-text" style={{ textAlign: "center" }}>
+      <h3 style={{ textAlign: "center" }}>
         DỊCH VỤ
-      </p>
+      </h3>
       {BACKGROUND_ITEM.map(({ id, src, classname }) => (
         <img
           key={id}
@@ -18,7 +19,7 @@ function Service() {
           alt={classname}
         />
       ))}
-      <p className="sub-text">
+      <p className="sub-text" style={{fontWeight: 500}}>
         Những dịch vụ hàng đầu được cung cấp tới khách hàng
       </p>
       <ul>
