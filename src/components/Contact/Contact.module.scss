@@ -22,16 +22,37 @@
   }
 }
 .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  padding: 30px 4vw 53px 2vw;
   width: 67%;
+  p {
+    color: var(--primary-color);
+    text-align: center;
+  }
   input {
     border: 0.5px solid #000000;
+    width: 100%;
   }
-  button{
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-weight: 600;
     background-color: var(--primary-color);
     color: white;
     width: 165px;
     height: 38px;
+  }
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  span {
+    color: red;
   }
 }

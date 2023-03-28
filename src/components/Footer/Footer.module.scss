@@ -1,0 +1,17 @@
+.container{
+    background-color: var(--primary-color);
+    color:white;
+    padding: 13px 12vw 8px 12vw;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    p{
+        margin:0;
+    }
+}
+.authorzire{
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}

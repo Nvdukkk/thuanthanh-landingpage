@@ -8,7 +8,6 @@ function ContactForm() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm({});
 
   const onSubmit = (data, e) => {
@@ -17,49 +16,63 @@ function ContactForm() {
   return (
     <form className={cx("form")} onSubmit={handleSubmit(onSubmit)}>
       <p>Liên hệ chúng tôi</p>
-      Họ và tên *
-      <input
-        type="text"
-        name="fullname"
-        {...register("name", { required: "Vui lòng nhập họ tên" })}
-      />
-      {errors.name && (
-        <span className="form-message">{errors.name.message}</span>
-      )}
-      Email *
-      <input
-        type="email"
-        name="email"
-        {...register("email", {
-          required: "Vui lòng nhập email",
-          pattern: {
-            value: /^[A-Z0-9+_.-]+@[A-Z0-9.-]+$/i,
-            message: "Vui lòng nhập đúng định dạng email",
-          },
-        })}
-      />
-      {errors.email && (
-        <span className="form-message">{errors.email.message}</span>
-      )}
-      Số điện thoại *
-      <input
-        type="number"
-        name="number"
-        {...register("number", {
-          required: "Vui lòng nhập số điện thoại",
-          minLength: {
-            value: 10,
-            message: "Vui lòng nhập định dạng 10 số, bao gồm cả số 0",
-          },
-        })}
-      />
-      {errors.password && (
-        <span className="form-message">{errors.password.message}</span>
-      )}
-      Tiêu đề
-      <input type="text" name="tieude" />
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div className={cx("col1")}>
+          Họ và tên *
+          <div style={{ height: "50px" }}>
+            <input
+              type="text"
+              name="fullname"
+              {...register("name", { required: "Vui lòng nhập họ tên" })}
+            />
+            {errors.name && (
+              <span>{errors.name.message}</span>
+            )}
+          </div>
+          Email *
+          <div style={{ height: "50px" }}>
+            <input
+              type="email"
+              name="email"
+              {...register("email", {
+                required: "Vui lòng nhập email",
+                pattern: {
+                  value: /^[A-Z0-9+_.-]+@[A-Z0-9.-]+$/i,
+                  message: "Vui lòng nhập đúng định dạng email",
+                },
+              })}
+            />
+            {errors.email && (
+              <span>{errors.email.message}</span>
+            )}
+          </div>
+        </div>
+        <div className={cx("col1")}>
+          Số điện thoại *
+          <div style={{ height: "50px" }}>
+            <input
+              type="text"
+              name="number"
+              {...register("number", {
+                required: "Vui lòng nhập số điện thoại",
+                minLength: {
+                  value: 10,
+                  message: "Vui lòng nhập định dạng 10 số",
+                },
+              })}
+            />
+            {errors.number && (
+              <span>{errors.number.message}</span>
+            )}
+          </div>
+          <div style={{ height: "50px" }}>
+            Tiêu đề
+            <input type="text" name="tieude" />
+          </div>
+        </div>
+      </div>
       Nội dung
-      <input type="text" name="noidung" />
+      <input type="text" name="noidung" style={{height:"200%"}}/>
       <button type="submit">GỬI THÔNG TIN</button>
     </form>
   );
