@@ -1,47 +1,42 @@
 .header {
-  background-image: url("../../../public/image/header_background.png");
   font-weight: 800;
-  height: 579px;
-  color: white;
-  position: relative;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .navbar {
-  float: right;
-  padding: 20px 20vw 0 0;
+  img {
+    padding-left: 8px;
+    padding-bottom: 3px;
+  }
 }
 .navbar-item {
   padding-left: 30px;
   font-style: 18px;
-}
-.text-line {
-  width: 526px;
-  padding-top: 170px;
-  margin-left: 24vw;
-}
+  color: var(--primary-color);
 
-.btn-line {
-  margin-left: 27.8vw;
-  margin-top: 26px;
-
-  button {
-    border: 1px solid var(--primary-color);
-    border-radius: 20px;
-    width: 139px;
-    height: 54px;
-    font-size: 18px;
-    font-weight: 800;
-  }
-  :first-child {
-    background-color: var(--primary-color);
-    margin-right: 2.3vw;
-    color: white;
-  }
-  :last-child {
-    background-color: white;
-    color: var(--primary-color);
+  &:hover {
+    opacity: 0.8;
   }
 }
-
+.dropdown::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
 .icon {
   display: flex;
   flex-direction: column;

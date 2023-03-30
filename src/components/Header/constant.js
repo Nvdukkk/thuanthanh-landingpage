@@ -1,34 +1,39 @@
-
 export const HEADER_NAV = [
   { 
     id: 1,
-    name: "Giới thiệu",
-    url: "/gioi-thieu",
+    name: "VỀ CHÚNG TÔI",
+    classname: "dropdown",
+    url: "#ve-chung-toi",
   },
   {
     id: 2,
-    name: "Dịch vụ",
-    url: "/dich-vu",
+    name: "DỊCH VỤ",
+    classname: "dropdown",
+    url: "#dich-vu",
   },
   {
     id: 3,
-    name: "Lợi ích",
-    url: "/loi-ich",
+    name: "GIẢI PHÁP VÀ SẢN PHẨM",
+    classname: "dropdown",
+    url: "#giai-phap-va-san-pham",
   },
   {
     id: 4,
-    name: "Tư vấn",
-    url: "/tu-van",
+    name: "TUYỂN DỤNG",
+    classname: "",
+    url: "#tuyen-dung",
   },
   {
     id: 5,
-    name: "Khách hàng",
-    url: "/khach-hang",
+    name: "ĐỐI TÁC",
+    classname: "",
+    url: "#doi-tac",
   },
   {
     id: 6,
-    name: "Liên hệ",
-    url: "/lien-he",
+    name: "LIÊN HỆ",
+    classname: "",
+    url: "#lien-he",
   },
 ];
 

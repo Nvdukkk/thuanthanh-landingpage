@@ -1,10 +1,10 @@
 import classNames from "classnames/bind";
-import styles from "./Introduce.module.scss";
+import styles from "./AboutUs.module.scss";
 const cx = classNames.bind(styles);
 
 function Introduce() {
   return (
-    <div className={cx("container")}>
+    <div className={cx("container")} id="ve-chung-toi">
       <img src="/image/poster.png" alt="poster" className={cx("img")} />
       <div className={cx("box")}>
         <h3>VỀ CHÚNG TÔI</h3>

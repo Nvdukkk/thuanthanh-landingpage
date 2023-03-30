@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 function Service() {
   return (
-    <div className={cx("container")}>
+    <div className={cx("container")} id="dich-vu">
       <h3 style={{ textAlign: "center" }}>
         DỊCH VỤ
       </h3>

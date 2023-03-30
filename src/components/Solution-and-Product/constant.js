@@ -1,4 +1,4 @@
-export const BENEFIT_BOX = [
+export const SOLUTION_BOX = [
   {
     id: 1,
     src: "/icon/rokket.svg",

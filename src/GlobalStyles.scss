@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600&display=swap");
-
+@import "~bootstrap/scss/bootstrap";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  --primary-color: #03a9f4;
+  --primary-color: #03669f;
   --text-color: #7B88A8;
 }
 
@@ -15,13 +15,14 @@ body {
 }
 
 a[href] {
-  color: white;
+  color: none;
   text-decoration: none;
 }
 
 button,
 input,
 [tabindex] {
+  background-color: transparent;
   border: none;
   outline: none;
   font-weight: none;

@@ -1,14 +1,14 @@
 import classNames from "classnames/bind";
-import styles from "./Benefit.module.scss";
-import { BENEFIT_BOX } from "./constant";
+import styles from "./SolutionProduct.module.scss";
+import { SOLUTION_BOX } from "./constant";
 const cx = classNames.bind(styles);
 
-function Benefit() {
+function SolutionProduct() {
   return (
-    <div className={cx("container")}>
+    <div className={cx("container")} id="giai-phap-va-san-pham">
       <h3 style={{paddingBottom: "16px"}}>LỢI ÍCH KHI SỬ DỤNG DỊCH VỤ CỦA CHÚNG TÔI</h3>
       <div className={cx("line-box")}>
-        {BENEFIT_BOX.map(({ id, src, title, content, active }) => (
+        {SOLUTION_BOX.map(({ id, src, title, content, active }) => (
           <div className={cx("box", active)} key={id}>
             <img src={src} alt={title} />
             <p className="sub-text">{title}</p>
@@ -28,4 +28,4 @@ function Benefit() {
   );
 }
 
-export default Benefit;
+export default SolutionProduct;
