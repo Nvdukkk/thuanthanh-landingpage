@@ -1,24 +1,30 @@
-import classNames from "classnames/bind";
 import { HEADER_NAV } from "./constant";
 
-import styles from "./Header.module.scss";
-const cx = classNames.bind(styles);
-
 function HeaderNavbar() {
+  const renderChildren = (item) => {
+    return item.map(({ id, title }) => (
+      <li className="list-unstyled px-3 py-2" key={id}>
+        {title}
+      </li>
+    ));
+  };
   return (
-    <div className={cx("navbar")}>
-      {HEADER_NAV.map(({ id, name, classname, url   }) => (
-        <a key={id} href={url} className={cx("navbar-item", classname)}>
-          {name}
-        </a>
+    <nav className="navbar navbar-expand-lg text-primary">
+      {HEADER_NAV.map(({ id, name, classname, url, children }) => (
+        <div className={classname} key={id}>
+          <a href={url} className="ps-30px">
+            {name}
+          </a>
+          <ul className="sub-navbar">{renderChildren(children)}</ul>
+        </div>
       ))}
-      <button style={{marginLeft:"22px"}}>
-        <img src="/image/vn-flag.png" alt="vn" />
+      <button className="ms-22px">
+        <img src="/image/vn-flag.png" alt="vn" className="ps-2 pb-3px" />
       </button>
       <button>
-        <img src="/image/american-flag.png" alt="vn" />
+        <img src="/image/american-flag.png" alt="vn" className="ps-2 pb-3px" />
       </button>
-    </div>
+    </nav>
   );
 }
 export default HeaderNavbar;

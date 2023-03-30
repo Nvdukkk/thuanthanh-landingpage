@@ -12,5 +12,20 @@ function HeaderIcon() {
       ))}
     </div>
   );
+
+// .icon {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   margin-bottom: 30px;
+//   margin-right: 32px;
+
+//   * {
+//     margin: 10px 0;
+//   }
+// }
+
 }
 export default HeaderIcon;

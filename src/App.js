@@ -6,12 +6,13 @@
 // import Introduce from "./components/AboutUs/AboutUs";
 // import Service from "./components/Service/Service";
 import Header from "./components/Header/Header";
+import SliderImage from "./components/SliderImage/SliderImage";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      
+      <SliderImage />  
     </div>
   );
 }

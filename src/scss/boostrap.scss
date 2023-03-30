@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600&display=swap");
+$link-color: unset;
+$link-decoration: none;
+$link-hover-color: unset;
+$link-hover-decoration: none;
+$paragraph-margin-bottom: 0;
+// Typography
+$font-family-sans-serif: "Inter", sans-serif;
+$font-size-base: 1rem;
+// Body color
+$body-bg: #ffffff;
+$body-color: #101010;
+// Text color
+$primary:#03669f;
+$secondary: #fe0000;
+// Padding + Margin
+$spacer: 1rem; //16px
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  '3px' : $spacer * .1875,
+  '22px' : $spacer * 1.375,
+  '30px' : $spacer * 1.875,
+);
+
+
+@import "bootstrap";
